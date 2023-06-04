@@ -8,5 +8,13 @@ public class Main {
 
         System.out.println("Бесплатные мили за перелёт:");
         System.out.println((ticketPrice / oneMile) + " бонусных миль");
+
+        BonusMilesService service = new BonusMilesService();
+        int price = 10000;
+        int miles = service.calculate(price);
+
+        System.out.println("При оплате на 10000 ");
+        System.out.println(miles + " бонусных миль");
     }
+
 }
